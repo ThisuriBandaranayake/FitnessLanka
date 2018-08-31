@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-
+import { RouterModule} from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,14 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule.forRoot([
+     
+      {
+      path:'login',
+      component:LoginComponent
+      }
+    ])
    
   ],
   providers: [],

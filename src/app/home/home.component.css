@@ -19,3 +19,16 @@ mat-grid-tile {
     font-size-adjust: inherit;
     color: #f3f1f0;
   }
+  button{
+    border-radius: 12px;
+    background-color: rgb(187, 75, 24); /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
