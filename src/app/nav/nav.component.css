@@ -1,0 +1,48 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity:0.4;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(196, 26, 26);
+    color: rgb(247, 243, 243);
+  }
+  
+  .topnav a.active {
+    background-color: rgb(92, 94, 92);
+    color: rgb(240, 234, 234);
+  }
+  .loginJoin{
+float: right;
+margin-right: 10%;
+color: blue;
+
+margin-top: .5%
+  }
+  button{
+    border-radius: 25%;
+    background-color: rgb(88, 79, 167); /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

@@ -1,0 +1,21 @@
+.header{
+    margin-top: 0%;
+    background-image: url("/assets/5.jpeg");
+background-repeat: no-repeat;
+background-size: 100% ;
+}
+mat-grid-tile {
+    
+  }
+  h1{
+      font-size: 60px;
+      font-family: fantasy;
+      font-size-adjust: inherit;
+      color: #f3f1f0;
+  }
+  h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size-adjust: inherit;
+    color: #f3f1f0;
+  }
