@@ -18,7 +18,8 @@ import { SwimmingComponent } from './swimming/swimming.component';
 import { SportsComponent } from './sports/sports.component';
 import { RegisterComponent } from './register/register.component';
 import { ArticlesComponent } from './articles/articles.component';
-
+import { Login2Component } from './login2/login2.component';
+import { HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -35,15 +36,20 @@ import { ArticlesComponent } from './articles/articles.component';
     SwimmingComponent,
     SportsComponent,
     RegisterComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    Login2Component
   ],
   imports: [
     BrowserModule,
     MatGridListModule,
     FormsModule,
     MatCardModule,
+    HttpClientModule,
     RouterModule.forRoot([
-     
+      {
+        path:'login2',
+        component:Login2Component
+      },
       {
         path:'articles',
         component:ArticlesComponent
