@@ -20,8 +20,12 @@ import { RegisterComponent } from './register/register.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { Login2Component } from './login2/login2.component';
 import { HttpClientModule} from '@angular/common/http';
-
-
+import { JoinusComponent } from './joinus/joinus.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { RegisterInstComponent } from './register-inst/register-inst.component';
+import { DateComponent } from './date/date.component';
+import { setTheme } from 'ngx-bootstrap/utils';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +41,12 @@ import { HttpClientModule} from '@angular/common/http';
     SportsComponent,
     RegisterComponent,
     ArticlesComponent,
-    Login2Component
+    Login2Component,
+    JoinusComponent,
+    RegisterInstComponent,
+    DateComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -45,7 +54,18 @@ import { HttpClientModule} from '@angular/common/http';
     FormsModule,
     MatCardModule,
     HttpClientModule,
+    MatDatepickerModule,
+    BsDatepickerModule.forRoot(),
     RouterModule.forRoot([
+      
+      {
+        path:'date',
+        component:DateComponent
+      },
+      {
+        path:'joinus',
+        component:JoinusComponent
+      },
       {
         path:'login2',
         component:Login2Component
@@ -72,4 +92,9 @@ import { HttpClientModule} from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() {
+    setTheme('bs3'); // or 'bs4'
+
+  }
+}
