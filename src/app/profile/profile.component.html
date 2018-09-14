@@ -1,0 +1,32 @@
+
+<!-- {{ tasks | json }} -->
+<div class="text-center">
+    <h1>  Daily tasks..</h1>
+    <div class="row">
+    <div class="col-md-12">
+<form #loginForm=ngForm (ngSubmit)="onSubmit()">
+  <!-- {{csrf_field()}} -->
+
+<input type="text" class="form-control" name="task" placeholder="Enter task name" [(ngModel)]="task" required>
+   <br>
+   <input type="submit"   class="btn-primary" value="Save">
+   <input type="button" class="btn-warning" value="Clear">
+
+</form>
+
+<table>
+<tbody>
+    <tr *ngFor="let task of tasks">
+    <td>
+      {{task['id']}}
+    </td>
+    <td>
+      {{task['task']}}
+    </td>
+    <td>
+      {{task['iscompleted']}}
+    </td>
+  </tr>
+</tbody>
+
+</table>
